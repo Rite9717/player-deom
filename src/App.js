@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import HlsPlayer from "./hlsPlayer";
 
 function App() {
+  const streamUrl = "http://storage.googleapis.com/ritesh_movies/movie/master.m3u8"; 
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <h2>Local HLS Stream</h2>
+      <HlsPlayer src={streamUrl} />
     </div>
   );
 }
