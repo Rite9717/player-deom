@@ -2,7 +2,7 @@ import React from "react";
 import HlsPlayer from "./hlsPlayer";
 
 function App() {
-  const streamUrl = "http://storage.googleapis.com/ritesh_movies/movie/master.m3u8"; 
+  const streamUrl = "https://storage.googleapis.com/ritesh_movies/movie/master.m3u8"; 
 
   return (
     <div style={{ textAlign: "center", marginTop: "50px" }}>
